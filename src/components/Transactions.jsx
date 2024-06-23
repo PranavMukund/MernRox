@@ -64,7 +64,7 @@ function Transactions({ month, monthText }) {
     const getData = async () => {
         try {
             setLoading(true);
-            const { data } = await axios.get(`http://localhost:4000/transactions`, {
+            const { data } = await axios.get(`https://mern-backend-ov33.onrender.com/transactions`, {
                 params: {
                     month,
                     page: tableParams.pagination.current,
